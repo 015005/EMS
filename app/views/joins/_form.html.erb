@@ -20,11 +20,15 @@
         <td><b>社員番号</b></td>
         <td><%= f.number_field :number %></td>
       </tr>
+      <tr>
+        <td><b>編集用PW</b></td>
+        <td><%= f.text_field :pass %></td>
+      </tr>
     </table>
   </div>
   
   <div class="actions">
-    <%= f.submit "参加" %>
+    <%= f.submit %>
   </div>
 
   <%= hidden_field_tag :event_id, @event.id %> 
