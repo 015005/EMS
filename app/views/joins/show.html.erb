@@ -1,18 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>参加者氏名:</strong>
-  <%= @join.name %>
-</p>
-
-<p>
-  <strong>社員番号:</strong>
-  <%= @join.number %>
-</p>
-
-<p>
-  <strong>編集用PW:</strong>
-  <%= @join.pass %>
-</p>
-
+<table>
+  <tr>
+    <th>氏名</th>
+    <td><%= @join.name %></td>
+  </tr>
+  <tr>
+    <th>社員番号</th>
+    <td><%= @join.number %></td>
+  </tr>
+</table>
+<br><br><br>
 <%= link_to '戻る', "/events" %>
+<br><br><br>
+
